@@ -93,6 +93,8 @@ if result:
         input_language = "zh-cn"
     elif in_lang == "Japonés":
         input_language = "ja"
+    elif in_lang == "Frances":
+        input_language = "fr"
     
     out_lang = st.selectbox(
         "Selecciona el lenguaje de salida",
@@ -110,6 +112,8 @@ if result:
         output_language = "zh-cn"
     elif out_lang == "Japonés":
         output_language = "ja"
+    elif out_lang == "Frances":
+        output_language = "fr"
     
     english_accent = st.selectbox(
         "Selecciona el acento",
@@ -142,6 +146,8 @@ if result:
         tld = "ie"
     elif english_accent == "Sudáfrica":
         tld = "co.za"
+    elif english_accent =="Frances":
+        tld = "fr"
     
     
     def text_to_speech(input_language, output_language, text, tld):
